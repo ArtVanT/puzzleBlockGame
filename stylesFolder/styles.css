@@ -1,0 +1,95 @@
+.tetris {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  display: flex;
+}
+.tetris .gameplay, .tetris .score {
+  width: 200px;
+  height: inherit;
+  border: 3px solid red;
+  position: relative;
+}
+
+.square-block {
+  border: 2px solid darkblue;
+  width: 5px;
+  height: 5px;
+}
+
+.angle, .square, .reverse-angle, .stick, .trident, .small-angle, .small-reverse-angle {
+  position: relative;
+}
+
+.angle {
+  margin-left: 50%;
+  margin-top: 10%;
+}
+
+.first-angle {
+  position: absolute;
+  left: 7%;
+}
+
+.square {
+  display: grid;
+  grid-template-columns: 9px 50px;
+  margin-left: 50%;
+  margin-top: 10%;
+}
+
+.reverse-angle {
+  margin-left: 50%;
+  margin-top: 10%;
+}
+
+.first-reverse-an {
+  position: absolute;
+  left: -7%;
+}
+
+.stick {
+  margin-left: 50%;
+  margin-top: 10%;
+}
+
+.trident {
+  margin-left: 50%;
+  margin-top: 10%;
+  display: flex;
+}
+
+.first-trident {
+  position: absolute;
+  bottom: 90%;
+  left: 8.5%;
+}
+
+.small-angle {
+  margin-left: 50%;
+  margin-top: 10%;
+}
+
+.first-small-a, .second-small-a {
+  display: flex;
+}
+
+.second-small-a {
+  position: absolute;
+  left: 7.1%;
+}
+
+.small-reverse-angle {
+  margin-left: 50%;
+  margin-top: 15%;
+}
+
+.first-small-b, .second-small-b {
+  display: flex;
+}
+
+.first-small-b {
+  position: absolute;
+  left: -7.1%;
+  top: 95%;
+}/*# sourceMappingURL=styles.css.map */
