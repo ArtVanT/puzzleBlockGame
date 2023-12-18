@@ -1,95 +1,50 @@
 .tetris {
   width: 400px;
-  height: 400px;
+  margin: 0;
+  padding: 0;
   margin: auto;
   display: flex;
 }
 .tetris .gameplay, .tetris .score {
   width: 200px;
-  height: inherit;
-  border: 3px solid red;
-  position: relative;
+  height: 400px;
 }
-
-.square-block {
-  border: 2px solid darkblue;
-  width: 5px;
-  height: 5px;
-}
-
-.angle, .square, .reverse-angle, .stick, .trident, .small-angle, .small-reverse-angle {
-  position: relative;
-}
-
-.angle {
-  margin-left: 50%;
-  margin-top: 10%;
-}
-
-.first-angle {
-  position: absolute;
-  left: 7%;
-}
-
-.square {
-  display: grid;
-  grid-template-columns: 9px 50px;
-  margin-left: 50%;
-  margin-top: 10%;
-}
-
-.reverse-angle {
-  margin-left: 50%;
-  margin-top: 10%;
-}
-
-.first-reverse-an {
-  position: absolute;
-  left: -7%;
-}
-
-.stick {
-  margin-left: 50%;
-  margin-top: 10%;
-}
-
-.trident {
-  margin-left: 50%;
-  margin-top: 10%;
+.tetris .score {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
 }
 
-.first-trident {
-  position: absolute;
-  bottom: 90%;
-  left: 8.5%;
+#start {
+  width: 45px;
+  height: 50px;
 }
 
-.small-angle {
-  margin-left: 50%;
-  margin-top: 10%;
-}
-
-.first-small-a, .second-small-a {
+.gameplay {
   display: flex;
+  flex-wrap: wrap;
+  background-color: cyan;
+}
+.gameplay div {
+  height: 20px;
+  width: 20px;
 }
 
-.second-small-a {
-  position: absolute;
-  left: 7.1%;
+.tetromino {
+  background-color: blue;
 }
 
-.small-reverse-angle {
-  margin-left: 50%;
-  margin-top: 15%;
-}
-
-.first-small-b, .second-small-b {
+.mini-grid {
+  width: 80px;
+  height: 80px;
   display: flex;
+  flex-wrap: wrap;
+  background-color: cyan;
+  margin-left: 50px;
 }
 
-.first-small-b {
-  position: absolute;
-  left: -7.1%;
-  top: 95%;
+.mini-grid div {
+  height: 20px;
+  width: 20px;
 }/*# sourceMappingURL=styles.css.map */
